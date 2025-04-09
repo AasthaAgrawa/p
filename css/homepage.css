@@ -1,86 +1,214 @@
-/* General styles */
-body {
+/* Make sure page takes up full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Flex layout for sticky footer */
+  body {
+    display: flex;
+    flex-direction: column;
     background: #D8D8D8;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
     color: #000000;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-}
-
-/* Header */
-header {
+  }
+  
+  /* Header */
+  header {
     background: #FFF7F7;
-    border: 1px solid #979797;
-    padding: 10px;
-}
-
-nav ul {
+    border-bottom: 1px solid #979797;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  .header-left h1 {
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.4;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  
+  .header-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .header-center nav ul {
+    display: flex;
     list-style: none;
+    gap: 20px;
     padding: 0;
     margin: 0;
-    display: flex;
-    gap: 15px;
-}
-
-nav ul li {
-    font-size: 16px;
-}
-
-/* Links */
-nav ul li a {
+    justify-content: center;
+  }
+  
+  .header-center nav ul li,
+  .header-center nav ul li a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
-}
-
-/* Main Content */
-main {
-    background: #FFFFFF;
-    border: 1px solid #979797;
+  }
+  
+  .header-right a img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+  
+  /* Layout for main content */
+  .content-container {
+    flex: 1; /* Takes remaining vertical space */
+    display: flex;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 160px;
+    background: #C8C8C8;
     padding: 20px;
-    margin: 20px;
-}
-/* Project List */
-main nav ul {
+    border-right: 1px solid #979797;
+  }
+  
+  .sidebar ul {
     list-style-type: none;
     padding: 0;
-    margin-bottom: 20px;
-}
-
-main nav ul li {
-    font-size: 14px;
-    padding: 5px;
-    border-bottom: 1px solid #979797;
-}
-
-/* Section Headings */
-h2 {
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 15px;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+    background: #D8D8D8;
+  }
+  
+  .project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+  
+  .project img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    background-color: #FFF7F7;
+    border: 1px solid #ccc;
+  }
+  
+  .project h2 {
+    margin: 0;
     font-size: 16px;
-    margin-top: 20px;
-}
-
-/* Paragraph Styling */
-p {
-    font-size: 12px;
-    color: #000;
-}
-
-/* Footer */
-footer {
+  }
+  
+  .project p {
+    font-size: 14px;
+  }
+  
+  /* Footer */
+  footer {
     background: #FFF7F7;
-    border: 1px solid #979797;
+    border-top: 1px solid #979797;
     text-align: center;
     padding: 10px;
-}
+    margin-top: auto; /* Makes sure it stays at the bottom */
+  }
+  
+  footer p {
+    margin: 5px;
+  }
+  
+  .footer-icons a {
+    margin: 0 8px;
+  }
 
-footer address {
-    font-size: 12px;
-}
-
-footer a {
-    text-decoration: none;
-    color: #000;
-    margin: 0 5px;
-}
+  @media (max-width: 768px) {
+    /* Stack header items vertically */
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      position: relative;
+    }
+  
+    .header-left, .header-center, .header-right {
+      position: static;
+      transform: none;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .header-left h1 {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .header-center nav ul {
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+    }
+  
+    .header-right {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    /* Stack sidebar and main */
+    .content-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #979797;
+      text-align: center;
+    }
+  
+    .sidebar ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    main {
+      padding: 10px;
+    }
+  
+    .project {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .project img {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+    }
+  }
