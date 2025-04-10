@@ -1,198 +1,163 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Get Well Soon App</title>
+  <meta charset="UTF-8">
+  <title>Get Well Soon App</title>
+  <link href="../css/GetWellSoonApp.css" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><h1>Aastha's Portfolio</h1></li>
-                <li>Projects</li>
-                <li>Just for Fun</li>
-                <li>About Me</li>
-                <li><a href="../pdfs/PortResume.pdf">Resume</a></li>
-                <li><a href="https://www.linkedin.com/in/aastha08">LinkedIn</a></li>
-                <li><a href="mailto:aasthagrawal123@gmail.com">Email</a></li>
-                <li><a href="https://github.com/AasthaAgrawa">Github</a></li>
-                <li><a href="https://vizzy.com/@aasthaagrawal">Vizzy</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+
+<header>
+  <div class="header-left">
+    <h1><a href="../html/homepage.html">Aastha's Portfolio</a>
+        <br><span class="subtitle">UX Designer & Front-end Developer</span></h1>
+  </div>
+
+  <div class="header-center">
     <nav>
-        <ul>
-            <li>Get Well Soon App</li>
-            <li>SPIRE</li>
-            <li>Freeform</li>
-            <li>Social Event Planner App</li>
-        </ul>
+      <ul>
+        <li>UX Projects</li>
+        <li>Graphic Designs</li>
+        <li>About Me</li>
+        <li><a href="../pdfs/PortResume.pdf">Resume</a></li>
+      </ul>
     </nav>
-    
-    <h2>Get Well Soon App</h2>
+  </div>
 
-    <h3>Overview</h3>
-    <p>This app is designed to support students during times of sickness by providing a platform for health management that allows students to customize and order meals from UMass dining to their dorms, integrate routine check-ups with University Health Services (UHS), track medication schedules with a built-in calendar, and maintain a detailed illness history for easy access.</p>
-   
-    <h3>Functionality</h3>
-    <ul>
-        <li>Track medicines and medical history</li>
-        <li>Schedule appointments with UHS</li>
-        <li>Customize sick meals</li>
-        <li>Deliver sick meals</li>
-    </ul>
+  <div class="header-right">
+    <a href="https://www.linkedin.com/in/aastha08">LinkedIn</a>
+    <a href="mailto:aasthagrawal123@gmail.com">Gmail</a>
+    <a href="https://github.com/AasthaAgrawa">Github</a>
+    <a href="https://vizzy.com/@aasthaagrawal">Vizzy</a>
+  </div>
+</header>
 
-    <h2>The Process</h2>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScB97jPvLB6XKEUkJkFwMhkDrQbwqc3UVN45GS oLxon-Bp2jg/viewform?usp=sharing">Google Form for Survey</a>
+<main class="case-study">
 
-    <div class="persona-container">
-        <h3>Persona 1: Sally</h3>
-        <p><strong>Name:</strong> Sally</p>
-        <p><strong>Background:</strong> Sophomore nursing student at UMass</p>
-        <p><strong>Situation:</strong> Quarantined in her dorm with the flu, unable to pick up medicine or meals.</p>
-        <p><strong>Challenges:</strong></p>
-        <ul>
+    <section class="intro">
+      <div class="intro-left">
+        <h2>Get Well Soon App</h2>
+        <p>
+          This app is designed to support students during times of sickness by providing a platform for health management that allows students to customize and order meals from UMass dining to their dorms, integrate routine check-ups with University Health Services (UHS), track medication schedules with a built-in calendar, and maintain a detailed illness history for easy access.
+        </p>
+      </div>
+      <div class="intro-right">
+        <p><strong>Time</strong><br>Oct 2024 - Nov 2024</p>
+        <p><strong>Tools</strong><br>Figma, Balsamiq, Canva,<br>Microsoft Teams, Google Form</p>
+        <p><strong>Role</strong><br>UI/UX Designer and Researcher</p>
+      </div>
+    </section>
+  
+    <section>
+      <h3 class="section-title">The Challenge</h3>
+      <p class="centered">
+        How might we create a more flexible and inclusive system that supports sick UMass students by providing customizable meal options, reducing reliance on others, and offering tools for managing appointments and medications—so they can recover with dignity, convenience, and care?
+      </p>
+    </section>
+  
+    <section>
+      <h3 class="section-title">Personas</h3>
+      <div class="personas">
+        <div class="persona">
+          <div class="persona-image"><img src="../images/sally.png" alt="Sally"></div>
+          <p><strong>Name:</strong> Sally</p>
+          <p><strong>Background:</strong> Sophomore nursing student at UMass</p>
+          <p><strong>Challenges:</strong></p>
+          <ul>
             <li>No one to help her get essentials.</li>
-            <li>Frustrated by the lack of resources for sick students.</li>
-            <li>Unhappy with the Get Well Soon meal service since she can’t choose her food.</li>
-        </ul>
-        <p><strong>Needs:</strong></p>
-        <ul>
-            <li>A centralized platform to schedule appointments.</li>
-            <li>The ability to order meals she actually wants.</li>
-            <li>An easy way to organize her medical documents.</li>
-        </ul>
-    </div>
-
-    <div class="persona-container">
-        <h3>Persona 2: Megan</h3>
-        <p><strong>Name:</strong> Megan</p>
-        <p><strong>Background:</strong> Freshman at UMass, out-of-state student living on campus.</p>
-        <p><strong>Challenges:</strong></p>
-        <ul>
-            <li>Has a gluten allergy, limiting her meal options.</li>
-            <li>Struggles to get proper meals when sick.</li>
-            <li>Has asthma, requiring frequent UHS visits.</li>
-            <li>Dislikes calling UHS for appointments and prescriptions.</li>
-            <li>Her dorm is far from UHS, making access to medicine difficult.</li>
-        </ul>
-        <p><strong>Needs:</strong></p>
-        <ul>
-            <li>An easier way to order gluten-free meals.</li>
-            <li>A streamlined system for booking UHS appointments.</li>
-            <li>More convenient access to inhalers and medication.</li>
-        </ul>
-    </div>
-
-    <div class="container">
-        <h2>Problem Statement</h2>
-        <p>Sick students at <strong>UMass struggle to access meals</strong> due to the limitations of the <strong>Get Well Soon</strong> program. Currently, students must rely on <span class="highlight">friends or RAs</span> to pick up meals, which <span class="highlight">isn’t always possible</span>. Additionally, the meals are <span class="highlight">predefined, non-customizable, and unsuitable</span> for those with dietary restrictions or allergies.</p>
-
-        <h3>Why This Problem Needs Solving</h3>
-        <ul>
-            <li><strong>Lack of Support:</strong> Sick students, especially those without nearby family or friends, can feel helpless.</li>
-            <li><strong>Limited & Inflexible Meal Options:</strong> Pre-set meals don’t allow personalization, which is a problem for students with <span class="highlight">dietary restrictions or allergies</span>.</li>
-            <li><strong>Financial Burden:</strong> If campus meal options don’t work, students may have to <span class="highlight">order from DoorDash</span>, which can be expensive.</li>
-            <li><strong>Appointment & Medicine Management:</strong> Booking UHS appointments is inconvenient, and managing medications can be <span class="highlight">disorganized or lack privacy</span>. A centralized system can ensure <span class="highlight">discreet notifications</span> and <span class="highlight">secure appointment tracking</span>.</li>
-        </ul>
-
-        <h3>Solution</h3>
-        <p>We aim to design a <strong>more convenient and accessible food ordering and delivery system</strong> that:</p>
-        <ul>
-            <li>Allows students to <strong>order meals that fit their needs</strong></li>
-            <li>Provides a <strong>delivery option for isolated students</strong></li>
-            <li>Offers <strong>a centralized platform</strong> for meal orders, medical appointments, and medicine tracking</li>
-        </ul>
-
-        <p>This ensures that <strong>sick students can focus on recovery instead of struggling with logistics</strong>.</p>
-    </div>
-
-    <div class="Low-fidelity">
-        <h2>LOW-FIDELITY PROTOTYPE (BALSAMIQ)</h2>
-        
-        <h3>Schedule Appointment with UHS</h3>
-        <!--add img-->
-        <p>Click on the calendar icon on the app homepage. To view an existing appointment, look at the calendar to find the date and time. Scroll down to see dates in the future, scroll up to see dates in the past. To get information about a specific appointment, click on it. If it was in the past, lab reports and documents will be accessible. To add a new appointment, click the plus sign on the calendar and input details in the fields.</p>
-
-        <h3>Track Medicines and Medical History</h3>
-        <!--add img-->
-        <p>Click on the calendar icon on the app homepage. To view an existing appointment, look at the calendar to find the date and time. Scroll down to see dates in the future, scroll up to see dates in the past. To get information about a specific appointment, click on it. If it was in the past, lab reports and documents will be accessible. To add a new appointment, click the plus sign on the calendar and input details in the fields.</p>
-    
-        <h3>Customize and Deliver Sick Meals</h3>       
-        <!--add img-->
-        <p>Click the "Order Sick Meals" button to go to a page where you can choose your preferred campus dining location. Once on the ordering page, scroll through the menu and click "Add" to select items. To view more details about a specific item, simply click on it; any allergens or food categories will be clearly highlighted. After adding items to your cart, navigate to your shopping cart and select "Checkout." Choose either delivery or pick-up, and enter details like delivery time and location in the provided fields. Add your preferred payment method, review your order, and submit your request.</p>
-    </div>
-
-    <div class="High-fidelity">
-        <h2>HIGH-FIDELITY PROTOTYPE (FIGMA)</h2>
-        
-        <h3>Scheduling Appointment</h3>
-        <!--add img-->
-        
-        <h3>Customizing and Ordering Sick Meals</h3>       
-        <!--add img-->
+            <li>Frustrated by lack of support.</li>
+            <li>Unhappy she can't choose meals.</li>
+          </ul>
+          <p><strong>Needs:</strong></p>
+          <ul>
+            <li>Appointment scheduling.</li>
+            <li>Customizable meals.</li>
+            <li>Organized medical records.</li>
+          </ul>
         </div>
-
-    <div class="Evaluation">
-        <h2>Evaluation (Heuristic)</h2>
-        <!--add image-->
-        <h3>Average Ratings:</h3>
-        <div class="ratings">
-            <p><strong>Evaluation 1:</strong> 1.1/4</p>
-            <p><strong>Evaluation 2:</strong> 1.4/4</p>
-            <p><strong>Evaluation 3:</strong> 1.1/4</p>
-            <p><strong>Evaluation 4:</strong> 1.3/4</p>
-            <p><strong>Evaluation 5:</strong> 1/4</p>
+  
+        <div class="persona">
+          <div class="persona-image"><img src="../images/meghan.png" alt="Meghan"></div>
+          <p><strong>Name:</strong> Megan</p>
+          <p><strong>Background:</strong> Freshman, out-of-state student</p>
+          <p><strong>Challenges:</strong></p>
+          <ul>
+            <li>Gluten allergy limits options.</li>
+            <li>Needs frequent UHS visits.</li>
+            <li>Dislikes calling UHS.</li>
+            <li>Dorm far from UHS.</li>
+          </ul>
+          <p><strong>Needs:</strong></p>
+          <ul>
+            <li>Easy way to get gluten-free meals.</li>
+            <li>Streamlined UHS booking.</li>
+            <li>Better access to medication.</li>
+          </ul>
         </div>
-
-        <p>Based on the average ratings, the app is overall <strong>functional</strong> but has several areas requiring improvement.</p>
-
-        <h3>Strengths:</h3>
-        <ul>
-            <li><strong>System Design:</strong> The evaluators agree that the app’s design aligns well with real-world usage.</li>
-            <li><strong>Task Recognition and Recovery:</strong> No issues with recognizing task steps, and the app effectively supports error recovery.</li>
+      </div>
+    </section>
+  
+    <section class="solution">
+        <h3 class="section-title">The Solution</h3>
+        <p>
+          We aim to design a more convenient and accessible food ordering and delivery system that:
+        </p>
+        <ul class="solution-list">
+          <li>Allows students to order meals that fit their needs</li>
+          <li>Provides a delivery option for isolated students</li>
+          <li>Offers a centralized platform for meal orders, medical appointments, and medicine tracking</li>
+          <li>Ensures that sick students can focus on recovery instead of struggling with logistics</li>
         </ul>
+    </section>
 
-        <h3>Minor Issues:</h3>
-        <ul>
-            <li><strong>Aesthetics:</strong> Some cosmetic issues with colors and light/dark mode inconsistencies, though they do not significantly affect usability.</li>
-            <li><strong>Flexibility and Efficiency:</strong> Usability could improve with more flexible features, such as adding notes for food orders or delivery.</li>
-        </ul>
+    <section class="prototypes">
+        <h3>Low-fidelity Prototype (Balsamiq)</h3>
+        <p class="subheading">Track medicines and medical history</p>
+        <img src="../images/medicine_lf.png" alt="Balsamiq medicine tracking">
+      
+        <p class="subheading">Make and track UHS Appointments</p>
+        <img src="../images/appt_tracking_lf.png" alt="Balsamiq appointment tracking">
+      
+        <p class="subheading">Ordering Sick Meals</p>
+        <img src="../images/sickmeal_lr.png" alt="Balsamiq meal ordering">
+      </section>
+      
+      <section class="prototypes">
+        <h3>High-fidelity Prototype (Figma)</h3>
+        <p class="subheading">Scheduling Appointments</p>
+        <img src="../images/schedule_hf.png" alt="Figma appointment screens">
+      
+        <p class="subheading">Customizing and Ordering Sick Meals</p>
+        <img src="../images/sickmeals_hf.png" alt="Figma meal customization">
+      </section>
+      
+      <section class="prototypes">
+        <h3>Heuristic Evaluation</h3>
+        <img src="../images/heuristic.png" alt="Heuristic evaluation feedback">
+        
+        <div class="recommendations">
+          <p><strong>Recommendations:</strong></p>
+          <ul>
+            <li>Prioritize addressing the error prevention issues to improve usability and user satisfaction.</li>
+            <li>Consider enhancing flexibility features and refining the app's aesthetic elements for a more polished user experience.</li>
+          </ul>
+        </div>
+      </section>
 
-        <h3 class="highlight">Major Concerns: Error Prevention</h3>
-        <p>The app <strong>violates the error prevention heuristic</strong> in several ways, causing significant usability challenges. Key issues include:</p>
-        <ul>
-            <li>Lack of safeguards against inputting incorrect addresses.</li>
-            <li>Absence of an option to sign up using an email address.</li>
-            <li>Missing reminders for medication timing.</li>
-        </ul>
-
-        <h3>Recommendations:</h3>
-        <ul>
-            <li><strong>Prioritize</strong> addressing error prevention issues to improve usability and user satisfaction.</li>
-            <li>Enhance <strong>flexibility features</strong> and refine aesthetic elements for a more polished user experience.</li>
-        </ul>
+      <img src="../images/Getwellsoon.png" alt="Get Well Soon App poster" class="poster">
+  
+  </main>
+  
+  <footer>
+    <p>Aastha Agrawal</p>
+    <div class="footer-icons">
+      <a href="https://www.linkedin.com/in/aastha08"><img src="../images/LinkedInIcon.png" alt="LinkedIn" width="40"></a>
+      <a href="mailto:aasthagrawal123@gmail.com"><img src="../images/gmailLogo.jpg" alt="Gmail" width="40"></a>
+      <a href="https://github.com/AasthaAgrawa"><img src="../images/GithubIcon.png" alt="GitHub" width="40"></a>
+      <a href="https://vizzy.com/@aasthaagrawal"><img src="../images/VizzyIcon.png" alt="Vizzy" width="40"></a>
     </div>
-
-    <!--add poster image-->
-
-    <div class="container">
-        <h2>Project Details</h2>
-        <p><strong>Client:</strong> COMPSCI 325: Introduction to Human Computer Interaction</p>
-        <p><strong>Date:</strong> Oct 2024 - Nov 2024</p>
-        <p><strong>Tools:</strong> Figma, Balsamiq, Canva, Microsoft Teams, Google Form</p>
-        <p><strong>Role:</strong> <span class="highlight">UI/UX Designer and Reseacher</span></p>
-    </div>
-
-    </main>
-    <footer>
-        Aastha Agrawal
-        <address>
-            <a href="https://www.linkedin.com/in/aastha08/">LinkedIn</a> |<a href="mailto:aasthagrawal123@gmail.com">Email</a> | <a href="https://github.com/AasthaAgrawa">Github</a> | <a href="https://vizzy.com/@aasthaagrawal">Vizzy</a>
-        </address>
-    </footer>
-</body>
-</html>
+    <p>Made with HTML5 + CSS3</p>
+  </footer>
+  
+  </body>
+  </html>
