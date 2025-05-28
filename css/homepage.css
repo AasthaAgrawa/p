@@ -304,6 +304,28 @@ body {
   .resume-container a:active {
     color: #dda0dd;
   }
+
+  /*Get Well Soon App*/
+  .light-box {
+    background-color: #f2e7d8;
+    color: #1a1919;
+  }
+  .light-box ul {
+    color: #1a1919;
+  }
+
+  .center-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .center-images img {
+    max-width: 90%;
+    border-radius: 6px;
+  }
   
   /* Responsive Design */
   @media screen and (max-width: 768px) {
